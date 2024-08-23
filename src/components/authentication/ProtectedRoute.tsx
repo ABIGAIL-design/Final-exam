@@ -22,8 +22,8 @@ const ProtectedRoute: React.FC<{ element: JSX.Element }> = ({ element }) => {
       <header className="flex w-full h-screen z-10 bg-black opacity-70 justify-center items-center m-auto space-x-2">
         <div className="w-full m-auto flex justify-center z-20">
           {" "}
-          <FaStaylinked color="#f9a826" size={40} />
-          <span className="text-xl font-bold text-[#f9a826]">Tiny-Lnk</span>
+          <FaStaylinked color="#3B71CA" size={40} />
+          <span className="text-xl font-bold text-[#3B71CA]">Tiny-Lnk</span>
         </div>
       </header>
     );

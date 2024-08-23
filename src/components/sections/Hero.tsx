@@ -20,16 +20,26 @@ const Showcase = () => {
       return console.log("user not signin");
     }
 
-    const gottenToken = await auth.currentUser.getIdToken();
+    // const gottenToken = await auth.currentUser.getIdToken();
 
-    const response = await fetch("https://tiny-lnk.netlify.app/shortenurl", {
+    const response = await fetch("https://api.tinyurl.com/create/", {
       method: "POST",
       headers: {
+      
+        // "user-id": gottenToken,
+        accept: "application/json",
+        Authorization: `Bearer l6QnlILGUkiwUk2SMxuQt66zSrwfyz1S5vVpB9t6fUmn0XuLm0rT5l0upCfw`,
         "Content-Type": "application/json",
-        "user-id": gottenToken,
       },
 
-      body: JSON.stringify({ originalUrl }),
+      body: JSON.stringify({  
+        url: originalUrl,
+        domain: "tinyurl.com",
+        // alias: formContent.customUrl || "",
+        description: "string",
+
+      
+      }),
     });
 
     if (response.ok) {
@@ -86,7 +96,8 @@ const Showcase = () => {
                   Shorten Your Links
                 </h1>
                 <p className="max-w-[600px] text-[#9b9a9a] text-muted-foreground leading-tight md:text-lg">
-                Streamline your online presence with our powerful URL shortener, offering clean, branded links that are simple to share and easy to track.
+                Enhance your online presence with our powerful URL shortener, providing clean, branded links that are easy to share and track.
+
                 </p>
               </div>
               <form onSubmit={handleShortUrl}>

@@ -4,7 +4,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
-const firebaseConfig = {
+const firebaseConfig = { 
   apiKey: "AIzaSyDRtYb-f8ltASI9dR2QaGZxCgsWO7SqQIQ",
   authDomain: "final-project-b2818.firebaseapp.com",
   databaseURL: "https://final-project-b2818-default-rtdb.firebaseio.com",

@@ -38,6 +38,7 @@ const Dashboard = () => {
               );
 
               setData(fetchedData);
+              console.log(setData)
               setIsLoading(false);
             },
             (err: any) => {

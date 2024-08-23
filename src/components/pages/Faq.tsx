@@ -6,19 +6,19 @@ const Faq = () => {
   const faqData = [
     {
       h1: "How does this work?",
-      p: "Our URL shortener takes your long URLs and transforms them into clean and concise links that are easy to share. Just enter your URL, and we will generate a shortened version that you can use anywhere.",
+      p: "Our URL shortener converts lengthy URLs into neat, compact links that are simple to share. Just input your URL, and we'll create a shortened version ready for you to use anywhere.",
     },
     {
       h1: "What are the plans?",
-      p: "We offer ranges of pricing plans to meet your needs. Our free plan allows you to create up to 80 shortened links per month. For more advanced features and higher usage limits, check out our paid plans starting at $4 per month.",
+      p: "We provide a variety of pricing plans to suit your needs. Our free plan lets you create up to 80 shortened links per month. For more advanced features and higher usage limits, explore our paid plans starting at just $4 per month..",
     },
     {
       h1: "How do I manage my account?",
-      p: "You can manage your account settings, including your profile information and billing details, by logging into your account dashboard. From there, you can also view your usage statistics and upgrade your plan if needed.",
+      p: "You can manage your account settings, update your profile information, and review billing details by logging into your account dashboard. There, you can also track your usage statistics and upgrade your plan as needed.",
     },
     {
       h1: "Can I customize my shortened links?",
-      p: "Yes, you can customize the appearance of your shortened links. Our premium plans allow you to choose a custom domain and even create branded links that match your companys style.",
+      p: "Yes, you can customize the look of your shortened links. Our premium plans let you choose a custom domain and create branded links that align with your company’s style..",
     },
     {
       h1: "How do I track the performance of my links?",
